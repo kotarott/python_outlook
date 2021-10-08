@@ -1,0 +1,2 @@
+# python_outlook
+OutlookをPythonで操作するアプリケーション
