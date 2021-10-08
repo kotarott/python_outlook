@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在庫チェッカー</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">在庫チェッカー</a>
+        </div>
+    </nav>
+    <main>
+        <section class="py-3 px-2">
+            <div class="card">
+                <div class="card-header">
+                    商品キーワード検索
+                </div>
+                <div class="card-body">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="search_word">
+                    <div class="text-end mt-1">
+                        <a href="#" class="btn btn-primary" id="search_btn">検索</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-3 px-2">
+            <div class="card">
+                <div class="card-header">
+                    商品リスト
+                </div>
+                <div class="card-body">
+                    <div class="text-end mb-1">
+                        <a href="#" class="btn btn-primary" id="output">在庫チェック＆ツイート開始</a>
+                    </div>
+                    <table class="table">
+                        <thead class="table-light">
+                            <tr>
+                                <th>##</th>
+                                <th>商品イメージ</th>
+                                <th>商品名</th>
+                                <th>ASIN</th>
+                            </tr>
+                        </thead>
+                        <tbody id="item_list">
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="../eel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
