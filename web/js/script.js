@@ -1,18 +1,25 @@
-$("#search_btn").on("click", function(){
-    const search_keyword = search_word.value
-    if (search_keyword) {
-      async function run() {
-        const news_list = await eel.get_item_list(search_keyword)();
-        if(news_list) {
-          create_table(news_list)
-        } else {
-          alert("エラー")
-        }
-      }
-      run();
-    } else {
-      alert("キーワードを入力してください。")
-    }
+$("#save_files").on("click", function(){
+    alert("ok")
+    const save_path = path.value
+    const subject = title.value
+    const sender_address = sender.value
+    // 時間まで入力されてないとnullになる。
+    const start_date = start.value
+    const end_date = end.value
+    console.log(start_date, typeof(start_date))
+    // if (search_keyword) {
+    //   async function run() {
+    //     const news_list = await eel.get_item_list(search_keyword)();
+    //     if(news_list) {
+    //       create_table(news_list)
+    //     } else {
+    //       alert("エラー")
+    //     }
+    //   }
+    //   run();
+    // } else {
+    //   alert("キーワードを入力してください。")
+    // }
   })
   
   $("#output").on("click", function() {
