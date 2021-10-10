@@ -60,4 +60,4 @@ class MyOutlook:
 
 
 if __name__ == "__main__":
-    pass
+    test = MyOutlook()
